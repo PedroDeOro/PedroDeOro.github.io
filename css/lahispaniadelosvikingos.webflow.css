@@ -3747,6 +3747,11 @@ body {
   object-fit: cover;
 }
 
+.image-13 {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 1440px) {
   .header.udesly-centered {
     display: block;
