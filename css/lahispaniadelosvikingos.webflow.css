@@ -3662,7 +3662,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1216px;
+  max-width: 100%;
   margin-right: auto;
   margin-bottom: 60px;
   margin-left: auto;
@@ -3693,7 +3693,64 @@ body {
   background-size: cover;
 }
 
+.image-8 {
+  max-height: 729px;
+}
+
+.feature_section-copy-margin-left {
+  width: 100vw;
+  margin-right: 0px;
+  margin-left: 40px;
+  background-color: transparent;
+}
+
+.feature_content_wrapper-copy {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0rem;
+  grid-row-gap: 4rem;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.feature_image-wrapper-copy {
+  max-width: none;
+}
+
+.hero-heading-left-pages-galeria-copy {
+  position: relative;
+  max-height: 672px;
+  padding: 80px 30px;
+  border-bottom: 1px solid #e4ebf3;
+  background-color: #f5f7fa;
+  background-image: url('../images/ulver_recreadores.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 @media screen and (min-width: 1440px) {
+  .header.udesly-centered {
+    display: block;
+  }
+
+  .body {
+    display: block;
+  }
+
   .rl-button-group {
     margin-top: 40px;
   }
@@ -3712,8 +3769,13 @@ body {
   }
 
   .feature_image-wrapper {
+    overflow: hidden;
     width: auto;
+    max-height: 600px;
+    max-width: 720px;
     min-width: 720px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .rl_layout192_component {
@@ -3770,10 +3832,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -3797,11 +3858,20 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    max-height: 600px;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    max-height: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -3889,10 +3959,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -3913,10 +3983,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -3949,10 +4019,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -4051,6 +4121,77 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
     background-color: transparent;
+  }
+
+  .udesly-container-2-copy {
+    max-width: 100%;
+  }
+
+  .hero-heading-left-pages-copy-artesania {
+    background-position: 50% 50%;
+  }
+
+  .image-8 {
+    max-height: 729px;
+  }
+
+  .feature_section-copy-margin-left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    max-height: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-color: transparent;
+  }
+
+  .feature_content_wrapper-copy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0rem;
+  }
+
+  .feature_image-wrapper-copy {
+    overflow: hidden;
+    width: 100%;
+    max-height: 600px;
+    max-width: none;
+    min-width: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .hero-heading-left-pages-galeria-copy {
+    background-image: url('../images/galeria.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
   }
 }
 
@@ -4490,6 +4631,26 @@ body {
   .rl-padding-section-large-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .image-7 {
+    max-height: 402px;
+  }
+
+  .feature_section-copy-margin-left {
+    margin-left: 20px;
+  }
+
+  .feature_content_wrapper-copy {
+    min-height: auto;
+    grid-auto-flow: row;
+    grid-column-gap: 3rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature_image-wrapper-copy {
+    width: 100%;
   }
 }
 
@@ -4933,11 +5094,33 @@ body {
     padding-bottom: 4rem;
   }
 
+  .image-7 {
+    max-height: 290px;
+  }
+
   .hero-heading-left-pages-copy-artesania {
     padding: 60px 15px;
   }
 
   .hero-heading-left-pages-copy-sobre-nosotros {
+    padding: 60px 15px;
+  }
+
+  .image-8 {
+    max-height: 290px;
+  }
+
+  .feature_section-copy-margin-left {
+    margin-left: 0px;
+  }
+
+  .feature_content_wrapper-copy {
+    grid-row-gap: 3rem;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-heading-left-pages-galeria-copy {
     padding: 60px 15px;
   }
 }
@@ -5261,6 +5444,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .heading-8 {
+    font-size: 58px;
+  }
+
   .container-4 {
     max-width: none;
   }
@@ -5357,6 +5544,15 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
+  .feature_content_wrapper-copy {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .feature_content_wrapper-copy.feature_content_mobile {
+    margin-top: 40px;
+  }
 }
 
 #w-node-_85ac9f8d-2eb3-983c-e974-e0ca01fdb377-01fdb374 {
@@ -5393,6 +5589,17 @@ body {
 }
 
 #w-node-_85ac9f8d-2eb3-983c-e974-e0ca01fdb381-01fdb374 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_02012a2f-b231-f4ac-a1f9-4c19873097d2-01fdb374 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
