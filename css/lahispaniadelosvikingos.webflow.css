@@ -3742,6 +3742,11 @@ body {
   background-size: cover;
 }
 
+.image-9 {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 1440px) {
   .header.udesly-centered {
     display: block;
@@ -3771,11 +3776,15 @@ body {
   .feature_image-wrapper {
     overflow: hidden;
     width: auto;
-    max-height: 600px;
+    max-height: none;
     max-width: 720px;
     min-width: 720px;
     margin-right: 0px;
+    margin-bottom: 0px;
     margin-left: 0px;
+    padding-bottom: 0px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .rl_layout192_component {
@@ -4192,6 +4201,21 @@ body {
     background-image: url('../images/galeria.jpg');
     background-position: 50% 50%;
     background-size: cover;
+  }
+
+  .image-10 {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .image-11 {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .image-12 {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 
