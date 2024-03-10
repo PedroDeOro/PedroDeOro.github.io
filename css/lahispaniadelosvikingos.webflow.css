@@ -3616,7 +3616,10 @@ body {
     width: 100vw;
     grid-column-gap: 0px;
     grid-row-gap: 0rem;
+    flex: 0 auto;
+    order: 0;
     justify-content: flex-end;
+    align-self: auto;
     align-items: center;
     display: flex;
   }
@@ -3631,17 +3634,14 @@ body {
     width: 100vw;
     grid-column-gap: 0px;
     grid-row-gap: 0rem;
-    background-image: url('../images/scape-virtual-1-1.jpg');
-    background-position: 50%;
-    background-size: cover;
     justify-content: flex-start;
     align-items: center;
     display: flex;
   }
 
   .conciertos {
-    width: 100vw;
-    max-height: 600px;
+    width: auto;
+    max-height: none;
     background-color: rgba(0, 0, 0, 0);
     background-size: cover;
     justify-content: flex-start;
@@ -3792,6 +3792,15 @@ body {
     max-width: 500px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .mercado {
+    width: auto;
+    max-height: none;
+    -webkit-text-fill-color: inherit;
+    background-image: url('../images/DSC03112.jpg');
+    background-size: cover;
+    background-clip: border-box;
   }
 
   .container-12 {
