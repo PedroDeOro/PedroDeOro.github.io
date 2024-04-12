@@ -943,9 +943,12 @@ body {
 .rl-text-style-medium-3 {
   color: var(--relume-library-lite-rl-black);
   text-align: left;
+  flex-flow: wrap;
   justify-content: flex-start;
   margin-top: 0;
   margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 40px;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -955,6 +958,7 @@ body {
 
 .rl-text-style-medium-3.text-left {
   text-align: left;
+  padding-left: 20px;
   display: flex;
 }
 
@@ -962,8 +966,9 @@ body {
   color: var(--relume-library-lite-rl-black);
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 25px;
+  padding-left: 40px;
+  font-family: Caslonantique, sans-serif;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1348,8 +1353,8 @@ body {
 
 .hero-heading-left-pages {
   background-color: #f5f7fa;
-  background-image: url('../images/ulver_recreadores2.jpg');
-  background-position: 50%;
+  background-image: url('../images/Recreadores_participa.jpg');
+  background-position: 50% 100%;
   background-size: cover;
   border-bottom: 1px solid #e4ebf3;
   max-height: 672px;
@@ -2770,9 +2775,10 @@ body {
 }
 
 .conferencia {
-  background-image: url('../images/velasco.jpg');
-  background-position: 50%;
-  background-size: cover;
+  background-image: url('../images/laia_conferencia.jpg');
+  background-position: 100% 6%;
+  background-repeat: repeat;
+  background-size: 130%;
 }
 
 .exhibiciones-combate {
@@ -2864,7 +2870,7 @@ body {
 
 .hero-heading-left-pages-galeria-copy {
   background-color: #f5f7fa;
-  background-image: url('../images/ulver_recreadores.jpg');
+  background-image: url('../images/galeria.jpg');
   background-position: 50%;
   background-size: cover;
   border-bottom: 1px solid #e4ebf3;
@@ -3414,9 +3420,9 @@ body {
 }
 
 .esgrima-historica {
-  background-image: url('../images/DSC04693_1.jpg');
-  background-position: 50%;
-  background-size: cover;
+  background-image: url('../images/esgrima2.jpg');
+  background-position: 0 30%;
+  background-size: 105%;
 }
 
 .heading-11 {
@@ -3671,6 +3677,7 @@ body {
   background-image: url('../images/prensa1.jpg');
   background-position: 100% 100%;
   background-size: cover;
+  display: flex;
 }
 
 .acreditaciones {
@@ -3681,10 +3688,54 @@ body {
   background-size: 100%;
   background-attachment: scroll;
   width: 100vw;
+  display: block;
 }
 
 .section-2 {
   background-color: #fff;
+}
+
+.section-3 {
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.div-block-7 {
+  width: 50%;
+  display: flex;
+}
+
+.div-block-8 {
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 50%;
+  display: flex;
+}
+
+.div-block-9 {
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+}
+
+.image-18 {
+  object-fit: contain;
+}
+
+.paragraph-10 {
+  text-align: left;
+}
+
+.paragraph-10.lista {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.div-block-10 {
+  align-self: flex-start;
+  display: block;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4183,6 +4234,10 @@ body {
     font-size: 2.75rem;
   }
 
+  .feature_image-wrapper {
+    display: flex;
+  }
+
   .rl_layout192_component {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr;
@@ -4211,10 +4266,20 @@ body {
     padding-bottom: 6rem;
   }
 
+  .rl-text-style-medium-3 {
+    padding-left: 0;
+  }
+
   .rl-heading-style-h2-3 {
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 25px;
+    padding-left: 0;
+    font-family: Caslonantique, sans-serif;
+    font-size: 32px;
     font-weight: 700;
+  }
+
+  .rl-heading-style-h2-3.title-left {
+    font-family: Caslonantique, sans-serif;
+    font-size: 32px;
   }
 
   .feature_content_wrapper {
@@ -4233,7 +4298,18 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .feature_content_wrapper-copy, .feature_content_wrapper_fullwidth, .feature_content_wrapper_fullwidth_left, .actividades {
+  .feature_content_wrapper-copy, .feature_content_wrapper_fullwidth {
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    min-height: auto;
+  }
+
+  .feature_text_wrapper_fullwidth {
+    margin-left: 0;
+  }
+
+  .feature_content_wrapper_fullwidth_left, .actividades {
     grid-column-gap: 3rem;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
@@ -4397,6 +4473,10 @@ body {
     padding-bottom: 6rem;
   }
 
+  .conferencia {
+    background-size: cover;
+  }
+
   .image-7 {
     max-height: 402px;
   }
@@ -4491,8 +4571,16 @@ body {
     margin-bottom: 40px;
   }
 
+  .esgrima-historica {
+    background-size: cover;
+  }
+
   .grid-4 {
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  }
+
+  .div-block-9 {
+    margin-left: 5%;
   }
 }
 
@@ -4644,7 +4732,15 @@ body {
     padding-top: 60px;
   }
 
-  .hero-heading-left-pages, .hero-without-image, .team-circles {
+  .hero-heading-left-pages, .hero-without-image {
+    padding: 60px 15px;
+  }
+
+  .paragraph-2 {
+    margin-left: 5%;
+  }
+
+  .team-circles {
     padding: 60px 15px;
   }
 
@@ -5061,6 +5157,7 @@ body {
 
   .button-secondary {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .udesly-device-wrapper {
@@ -5081,7 +5178,8 @@ body {
   }
 
   .udesly-title-wrapper-centered {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    margin-left: 0%;
   }
 
   .udesly-container-2 {
@@ -5096,7 +5194,21 @@ body {
     padding-bottom: 10px;
   }
 
-  .rl_layout192_component, .rl_layout1_component, .feature_content_wrapper {
+  .rl_layout192_component, .rl_layout1_component {
+    grid-template-columns: 1fr;
+  }
+
+  .rl-text-style-medium-3 {
+    padding-left: 0;
+  }
+
+  .rl-heading-style-h2-3 {
+    padding-left: 0;
+    font-family: Caslonantique, sans-serif;
+    font-size: 26px;
+  }
+
+  .feature_content_wrapper {
     grid-template-columns: 1fr;
   }
 
@@ -5104,7 +5216,11 @@ body {
     margin-top: 40px;
   }
 
-  .feature_content_wrapper-copy, .udesly-logo-grid {
+  .feature_text_wrapper-copy {
+    margin-left: 16%;
+  }
+
+  .udesly-logo-grid {
     grid-template-columns: 1fr;
   }
 
@@ -5146,7 +5262,15 @@ body {
     background-color: rgba(255, 255, 255, .87);
   }
 
-  .container-2, .container-3 {
+  .container-2 {
+    max-width: none;
+  }
+
+  .paragraph-2 {
+    margin-left: 5%;
+  }
+
+  .container-3 {
     max-width: none;
   }
 
@@ -5301,6 +5425,13 @@ body {
     max-width: 300px;
   }
 
+  .div-block-2 {
+    justify-content: center;
+    align-items: center;
+    margin-left: 16%;
+    margin-right: 16%;
+  }
+
   .feature_content_wrapper_fullwidth-mercado-copy {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -5370,6 +5501,23 @@ body {
   .image-17 {
     object-fit: cover;
     margin-left: auto;
+  }
+
+  .section-3 {
+    flex-flow: column;
+  }
+
+  .div-block-7 {
+    width: 100%;
+    padding-left: 16%;
+  }
+
+  .div-block-8 {
+    max-width: 100%;
+  }
+
+  .div-block-9 {
+    margin-left: -10%;
   }
 }
 
